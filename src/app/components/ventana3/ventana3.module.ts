@@ -1,13 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HolaComponent } from './hola.component';
 
 
 
 @NgModule({
-  declarations: [HolaComponent],
+  declarations: [],
   imports: [
     CommonModule
   ]
 })
-export class HolaModule { }
+export class Ventana3Module { }
