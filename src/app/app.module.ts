@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
+import { FormsModule } from '@angular/forms';
 import { Ventana1Component } from './components/ventana1/ventana1.component';
 import { Ventana2Component } from './components/ventana2/ventana2.component';
 import { Ventana3Component } from './components/ventana3/ventana3.component';
@@ -18,7 +19,8 @@ import { Ventana3Component } from './components/ventana3/ventana3.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
