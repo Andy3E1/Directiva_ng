@@ -1,4 +1,12 @@
 <div>
+    <button (click)="navegacion()">Pagina Principal</button>
+    <button (click)="navegar()" >Informacion</button>
+    <button (click)="pag_2()">Hobbies</button>
+    <button (click)="pag_3()" >Profesion</button>
+    <h1>Blog-Capón Andy-3E1</h1>
+    <h4>Blog personal de Andy Capon- 3E1- Programación Movil</h4>
+    <div><br>
+<div>
     <input [(ngModel)]="numero"/>
     <br />
 <strong *ngIf="numero ==''">No hay numero</strong>
@@ -7,11 +15,24 @@
 <strong *ngIf="numero < 3 && numero>0">{{numero}}, El numero es menor que 3</strong>
 <strong *ngIf="numero < 0">{{numero}}, El numero es menor que 0</strong>
 </div>
-<h2>Numero: </h2><br>
 <h2>Sueldos:</h2>
 <ul *ngFor="let sueldos of sueldos">
     <li>{{sueldos}}</li>
 </ul>
 <div *ngFor="let sueldo of sueldos">
     <div>Sueldo: {{sueldo}}</div>
+</div>
+<button (click)="almacenar()">Almacenar</button><hr>
+<h1>Insumo #6</h1>
+<div>
+    <fieldset id="formulario">
+        <legend>Datos Personales Basicos</legend>
+        <p>Primer Nombre: <input type="text" name="nombre"/> 
+           Primer apellido: <input type="text" name="apellido" size="25"/>
+        <p>Dirección: <input type="text" name="direccion" size="50" value="Tu direccion POR FAVOR"/></p>
+        <p>e-mail: <input type="text" name="email" size="35" value=" @ "/></p>
+        <p>contraseña: <input type="password" name="contraseña"/></p>
+        <p>Telefono: <input type="tel" name="telefono"/></p>
+            <button (click)="informacion()">Guardar Datos</button>
+        </fieldset>	
 </div>
